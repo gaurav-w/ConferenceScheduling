@@ -1,6 +1,11 @@
-package com.thoughtworks.conference.test;
+package com.company.conference.test;
 
 import org.junit.Test;
+
+import com.company.conference.InputFileParser;
+import com.company.conference.Talk;
+import com.company.conference.TalkException;
+
 import org.junit.Ignore;
 
 import static org.junit.Assert.*;
@@ -8,10 +13,6 @@ import static org.junit.Assert.*;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-
-import com.thoughtworks.conference.InputFileParser;
-import com.thoughtworks.conference.Talk;
-import com.thoughtworks.conference.TalkException;
 
 public class TestInputParser {
 

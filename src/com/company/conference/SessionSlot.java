@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 /**
  * This defines slot names for the sessions in each track

@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

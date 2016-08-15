@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 /**
  * This class stores all attributes of a Talk

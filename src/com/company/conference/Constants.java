@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 /**
  * This class will have the contants used in the package. It will also store all

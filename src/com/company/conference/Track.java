@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 /**
  * Track is composition of morning and evening sessions.

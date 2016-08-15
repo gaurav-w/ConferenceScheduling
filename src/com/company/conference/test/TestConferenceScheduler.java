@@ -1,6 +1,14 @@
-package com.thoughtworks.conference.test;
+package com.company.conference.test;
 
 import org.junit.Test;
+
+import com.company.conference.ConferenceScheduler;
+import com.company.conference.InputFileParser;
+import com.company.conference.Session;
+import com.company.conference.Talk;
+import com.company.conference.TalkException;
+import com.company.conference.Track;
+
 import org.junit.Ignore;
 
 import static org.junit.Assert.*;
@@ -10,13 +18,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.thoughtworks.conference.ConferenceScheduler;
-import com.thoughtworks.conference.InputFileParser;
-import com.thoughtworks.conference.Session;
-import com.thoughtworks.conference.Talk;
-import com.thoughtworks.conference.TalkException;
-import com.thoughtworks.conference.Track;
 
 public class TestConferenceScheduler {
 

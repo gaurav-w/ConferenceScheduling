@@ -1,4 +1,4 @@
-package com.thoughtworks.conference;
+package com.company.conference;
 
 /**
  * This is used for any Scheduling related exceptions
