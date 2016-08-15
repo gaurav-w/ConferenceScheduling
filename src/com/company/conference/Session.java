@@ -23,7 +23,8 @@ public class Session {
 	public void displaySession() {
 
 		for (int i = 0; i < talks.size(); i++) {
-			Util.printMessage(talks.get(i).getScheduledTime() + talks.get(i).getName());
+			Util.printMessage(talks.get(i).getScheduledTime() + talks.get(i).getName() + " "
+					+ (talks.get(i).getDuration() > 5 ? talks.get(i).getDuration() + "min" : "lighting"));
 		}
 
 	}

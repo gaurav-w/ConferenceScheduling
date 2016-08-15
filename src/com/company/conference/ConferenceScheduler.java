@@ -114,8 +114,8 @@ public class ConferenceScheduler {
 		Track track = null;
 		ArrayList<Track> tracks = new ArrayList<Track>();
 		int lunchTimeDuration = Constants.LUNCH_TIME;
-		Talk networkingTalk = new Talk(Constants.NETWORKING_EVENT, Constants.NETWORKING_SESSION_TIME);
-		Talk lunchTalk = new Talk(Constants.LUNCH, Constants.LUNCH_TIME);
+		Talk networkingTalk = null;
+		Talk lunchTalk = null;
 		int totalNoOfDays = morningSessions.size();
 
 		// schedule event for all days.
@@ -142,10 +142,12 @@ public class ConferenceScheduler {
 			}
 
 			// Schedule Lunch Time 
+			lunchTalk = new Talk(Constants.LUNCH, Constants.LUNCH_TIME);
 			lunchTalk.setScheduledTime(scheduledTime);
 			mornSessionTalkList.add(lunchTalk);
 			talkList.add(lunchTalk);
 
+			
 			// Schedule Afternoon Session
 			scheduledTime = Util.getNextEventTime(date, lunchTimeDuration);
 			List<Talk> afternoonSessionTalkList = afternoonSessions.get(dayCount);
@@ -158,6 +160,7 @@ public class ConferenceScheduler {
 			}
 
 			// Schedule Networking Event at the end of track.
+			networkingTalk = new Talk(Constants.NETWORKING_EVENT, Constants.NETWORKING_SESSION_TIME);
 			networkingTalk.setScheduledTime(scheduledTime);
 			talkList.add(networkingTalk);
 			afternoonSessionTalkList.add(networkingTalk);
